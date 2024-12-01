@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: spring-batch-multidatasource
+  datasource:
+    mysql:
+      url: jdbc:mysql://localhost:3306/apitest?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+      username: root
+      password: afr@2022
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  # h2:
+  #    url: jdbc:h2:mem:testdb
+  #    driver-class-name: org.h2.Driver
+  #    username: sa
+  #    password:
+  #batch:
+  #    jdbc:
+  #      initialize-schema: always
+  #      table-prefix: BATCH_
+
+
+logging:
+  level:
+    org:
+      springframework:
+        batch: DEBUG
