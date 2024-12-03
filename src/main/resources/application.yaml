@@ -1,6 +1,9 @@
 spring:
   application:
     name: spring-batch-multidatasource
+  h2:
+    console:
+      enabled: true
   datasource:
     mysql:
       url: jdbc:mysql://localhost:3306/apitest?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
